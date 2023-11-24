@@ -2,17 +2,10 @@
     RESET
 */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 :root {
     --night-blue: #051E34;
     --dark-blue: #165BBA;
 }
-
 
 /* 
     GENERAL
@@ -21,7 +14,6 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
-
 
 /*
     HEADER
@@ -75,7 +67,6 @@ header {
 .main_content { 
     height: calc(100vh - 60px);
     overflow: auto;
-    padding-bottom: 50px;
 }
 
 tr img {
@@ -90,7 +81,6 @@ tr img {
 th {
     text-align: left;
 }
-
 
 /* 
     RESPONSIVE
@@ -139,7 +129,6 @@ th {
         display: none;
     }
     
-
 }
 
 /* SMARTPHONE */
