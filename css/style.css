@@ -28,6 +28,11 @@ html {
 */
 header {
     height: 60px;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    background-color: white;
 }
 .logo_small img {
     height: 40px; 
@@ -67,8 +72,10 @@ header {
     width: 700px;
 }
 
-.main_content {
+.main_content { 
+    height: calc(100vh - 60px);
     overflow: auto;
+    padding-bottom: 50px;
 }
 
 tr img {
