@@ -9,8 +9,10 @@
 }
 
 :root {
-    --dark-blue: #051E34;
+    --night-blue: #051E34;
+    --dark-blue: #165BBA;
 }
+
 
 /* 
     GENERAL
@@ -33,12 +35,36 @@ header {
 }
 
 /*
-MAIN
+    MAIN
 */
-.fixed-sidebar {
+.my_sidebar {
     height: calc(100vh - 60px);
     background-image: url(../img/sidebar-bg.png);
+    background-color: var(--night-blue);
+}
+
+.my_badge {
     background-color: var(--dark-blue);
+    border-radius: 25px;
+}
+
+.square {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.badge_plus {
+    display: none;
+}
+
+#offcanvasRight {
+    width: 700px;
 }
 
 /* 
@@ -64,12 +90,24 @@ MAIN
         display: block;
     }
 
-    .fixed-sidebar span {
+    .my_sidebar span {
         display: none;
+    }
+
+    .badge_plus {
+        display: block;
+    }
+
+    .bool_badge {
+        display: none;
+    }
+
+    #offcanvasRight {
+        width: 90vw;
     }
 }
 
 /* SMARTPHONE */
 @media screen and (max-width: 576px) {
-
+    
 }
