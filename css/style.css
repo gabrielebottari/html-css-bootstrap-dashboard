@@ -1,7 +1,6 @@
 /* 
     RESET
 */
-
 :root {
     --night-blue: #051E34;
     --dark-blue: #165BBA;
@@ -10,7 +9,6 @@
 /* 
     GENERAL
 */
-
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -26,6 +24,7 @@ header {
     z-index: 1;
     background-color: white;
 }
+
 .logo_small img {
     height: 40px; 
     display: none; 
@@ -38,6 +37,14 @@ header {
     height: calc(100vh - 60px);
     background-image: url(../img/sidebar-bg.png);
     background-color: var(--night-blue);
+}
+
+.my_sidebar div div:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.fixed-bottom {
+    width: 140px;
 }
 
 .my_badge {
@@ -85,14 +92,11 @@ th {
 /* 
     RESPONSIVE
 */
-
 /* PC SMALL */
 @media screen and (max-width: 992px) {
-
     .date {
         display: none;
     }
-
 }
 
 /* TABLET */
@@ -121,21 +125,22 @@ th {
         display: none;
     }
 
+    .fixed-bottom {
+        width: 40px;
+    }
+
     #offcanvasRight {
         width: 90vw;
     }
 
     .roi {
         display: none;
-    }
-    
+    }  
 }
 
 /* SMARTPHONE */
 @media screen and (max-width: 576px) {
-
     #offcanvasRight {
         width: 100vw;
-    }
-    
+    }   
 }
