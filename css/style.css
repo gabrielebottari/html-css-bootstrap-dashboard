@@ -67,12 +67,34 @@ header {
     width: 700px;
 }
 
+.main_content {
+    overflow: auto;
+}
+
+tr img {
+    width: 25px;
+}
+
+.table_icons {
+    color: gray;
+    font-size: 0.8em;
+}
+
+th {
+    text-align: left;
+}
+
+
 /* 
     RESPONSIVE
 */
 
 /* PC SMALL */
 @media screen and (max-width: 992px) {
+
+    .date {
+        display: none;
+    }
 
 }
 
@@ -105,9 +127,19 @@ header {
     #offcanvasRight {
         width: 90vw;
     }
+
+    .roi {
+        display: none;
+    }
+    
+
 }
 
 /* SMARTPHONE */
 @media screen and (max-width: 576px) {
+
+    #offcanvasRight {
+        width: 100vw;
+    }
     
 }
