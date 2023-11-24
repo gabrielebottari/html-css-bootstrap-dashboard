@@ -24,8 +24,41 @@
     <body>
         
         <header><!-- Inizio Header Principale -->
-            <div class="container">
-                HEADER
+            <div class="container-fluid">
+                <div class="row p-2">
+                    <div class="col-auto">
+                        <div class="logo align-middle pt-2">
+                            <img src="./img/logo.svg" alt="logo">
+                        </div>
+                        <div class="logo_small img-fluid align-middle">
+                            <img src="./img/mobile-logo.png" alt="logomobile">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="input-group align-middle pt-1">
+                            <span class="input-group-text bg-secondary-subtle" id="basic-addon1"><i class="bi bi-search"></i></span>
+                            <input type="text" class="form-control bg-secondary-subtle" placeholder=" Prova a cercare: Lezioni di Laravel" aria-label="Username" aria-describedby="basic-addon1">
+                          </div>
+                    </div>
+                    <div class="col-auto header_right pt-1">
+                        <div class="align-middle pt-2">
+                            <span class="header_icons">
+                                <i class="fa-solid fa-bars px-1"></i>
+                                <i class="fa-solid fa-circle-question px-1"></i>
+                                <i class="fa-solid fa-ellipsis-vertical px-1"></i>
+                            </span>
+                            <div class="dropdown d-inline-block" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-bell" style="color: #ff9500;"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </header><!-- Fine Header Principale -->
           

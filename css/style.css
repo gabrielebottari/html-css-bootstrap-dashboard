@@ -16,7 +16,40 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
-    max-width: 1170px;
-    margin: 0 auto;
+
+/*
+    HEADER
+*/
+.logo_small img {
+  height: 40px; 
+  display: none; 
+}
+
+/* 
+    RESPONSIVE
+*/
+
+/* PC SMALL */
+@media screen and (max-width: 992px) {
+
+}
+
+/* TABLET */
+@media screen and (max-width: 762px) {
+    .header_icons {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo_small img {
+        display: block;
+    }
+}
+
+/* SMARTPHONE */
+@media screen and (max-width: 576px) {
+
 }
