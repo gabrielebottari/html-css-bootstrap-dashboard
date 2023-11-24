@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --dark-blue: #051E34;
+}
+
 /* 
     GENERAL
 */
@@ -20,9 +24,21 @@ html {
 /*
     HEADER
 */
+header {
+    height: 60px;
+}
 .logo_small img {
-  height: 40px; 
-  display: none; 
+    height: 40px; 
+    display: none; 
+}
+
+/*
+MAIN
+*/
+.fixed-sidebar {
+    height: calc(100vh - 60px);
+    background-image: url(../img/sidebar-bg.png);
+    background-color: var(--dark-blue);
 }
 
 /* 
@@ -46,6 +62,10 @@ html {
 
     .logo_small img {
         display: block;
+    }
+
+    .fixed-sidebar span {
+        display: none;
     }
 }
 
