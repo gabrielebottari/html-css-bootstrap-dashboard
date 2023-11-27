@@ -46,7 +46,7 @@ header {
 .top_sidebar {
     min-height: 125px;
     overflow: hidden;
-    height: calc(100% - 60px);
+    height: calc(100% - 65px);
 }
 
 .my_badge {
