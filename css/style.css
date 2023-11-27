@@ -43,8 +43,10 @@ header {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-.fixed-bottom {
-    width: 140px;
+.top_sidebar {
+    min-height: 125px;
+    overflow: hidden;
+    height: calc(100% - 60px);
 }
 
 .my_badge {
